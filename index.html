@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scissor, Paper, Rock</title>
-    <script src="./rock-paper-scissor.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class=container> 
+        <header class="header"> 
+            <h1> Odin's Rock Paper Scissor Game!</h1>
+        </header>
+        <div class="main">
+            <h2> What do you choose?</h2>
+            <div class="options">
+                <ul> 
+                    <li><button id="rockBtn">Rock</button></li>
+                    <li><button id="scissorBtn">Scissor</button></li>
+                    <li><button id="paperBtn">Paper</button></li>
+                </ul>
+            </div>
+            <div class="gameVisualizer">
+                <p id="computerDisplay"> COMPUTER: </p>
+                <span id="computerDisplayOption"> </span>
+                <p id="humanDisplay">YOU: </p>
+                <span id="humanDisplayOption"></span>
+            </div>
+            </div>
+            <div class="counter">
+                <p id="computerTextPoints"> COMPUTER: </p>
+                <span id="computerPoints"> </span>
+                <p id="humanTextPoints">YOU: </p>
+                <span id="humanPoints"></span>
+            </div>
+        </div>
+        <div class="finalMenu">
+            <p id="resultFinal"></p>
+            <button id="restart">Play Again</button>
+        </div>
+    </div>
+
+
+    <script src="./rock-paper-scissor.js"></script>
 </body>
 </html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: #fafafa;
+  font-family: "Roboto", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+header,
+.main,
+.options {
+    padding: 8px 20px;
+    margin: 16px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    flex-basis: content;
+}
+
+.options button {
+    font-size: 1.5rem;
+    color: #fafafa;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #fafafa;
+    background: #252525;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    margin: 35px 0;
+}
+
+.options button:hover {
+    background-color: #fafafa;
+    border: 2px solid #252525;
+    color: #252525;
+}
+
+.options button:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+.counter,
+.gameVisualizer {
+    padding: 18px;
+    margin: 8px 16px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    font-size: 2rem;
+    border: 2px solid #fafafa;
+    gap: 8px;
+}
+
+#computerDisplay,
+#humanDisplay,
+#computerTextPoints,
+#humanTextPoints {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.finalMenu {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0px;
+}
+
+#restart {
+    font-size: 1.5rem;
+    color: #252525;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #252525;
+    background: #fafafa;
+    box-shadow: 3px 3px #000000;
+    cursor: pointer;
+    margin: 35px 0;
+}
+#restart:hover {
+    background-color: #252525;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+}
+
+#restart:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+.options button,
+#restart {
+    transition: all 0.2s ease;
+}
